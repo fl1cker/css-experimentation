@@ -1,0 +1,54 @@
+.box {
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    background-color: lightblue;
+}
+
+.triangle, .arrow {
+    width: 0;
+    height: 0;
+    border: 40px solid transparent;
+    border-top-color:  lightblue;
+    margin: auto;
+}
+
+.arrow {
+    position: absolute;
+    top: 80px;
+    left: 60px;
+}
+
+.arrow:before {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 30px;
+    top: -70px;
+    left: -10px;
+    background-color: lightblue;
+}
+
+.circle {
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: lightblue;
+}
+
+section[title="translations"]:hover .box {
+    transform: translate(20px, 20px);
+}
+
+section[title="translations"]:hover .triangle {
+    transform: skewY(20deg);
+}
+
+section[title="translations"]:hover .arrow {
+    transform: rotate(180deg);
+}
+
+section[title="translations"]:hover .circle {
+    transform: scale(.5);
+}
