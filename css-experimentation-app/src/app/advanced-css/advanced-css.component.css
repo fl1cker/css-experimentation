@@ -1,0 +1,51 @@
+.container {
+    width: 750px;
+    height: 500px;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+}
+
+.row {
+    display: block;
+    width: 100%;
+    height: 7.692%;
+}
+
+.column {
+    display: inline-block;
+    width: 6.66%;
+    height: 100%;
+    background-color: blue;
+    color: white;
+    font-size: 22px;
+    text-align: center;
+}
+
+ /* Solid Star */
+.column:before {
+    content: '\2605';
+}
+
+.column {
+    text-shadow: 22px 22px 0 white;
+}
+
+.row:nth-child(2n+1) .column:nth-child(n + 7),
+.row:nth-child(2n+9) .column
+  {
+    color: transparent;
+    background-color: red;
+    text-shadow: none;
+}
+
+.row:nth-child(2n) .column:nth-child(n + 7),
+.row:nth-child(2n+8) .column
+  {
+    color: transparent;
+    background-color: white;
+    text-shadow: none;
+}
+

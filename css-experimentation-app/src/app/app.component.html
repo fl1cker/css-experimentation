@@ -1,11 +1,2 @@
-<section *ngFor="let section of sections" title={{section}}>
-    <h2 class="pascalCase">{{section}} <span *ngIf="section === 'translations'" class="small-text">(Hover Here)</span></h2>
-    <ul>
-        <li *ngFor="let shape of shapes" class="container">
-            <div class="content">
-                <h3>Here is {{shape == 'arrow' ? 'an' : 'a'}} {{shape}}</h3>
-                <div class={{shape}}></div>
-            </div>
-        </li>
-    </ul>
-</section>
+<simple-css></simple-css>
+<advanced-css></advanced-css>

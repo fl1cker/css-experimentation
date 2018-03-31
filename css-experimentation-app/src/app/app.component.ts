@@ -7,7 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'CSS Magic';
-  
-  shapes: string[] = ['box', 'circle', 'triangle', 'arrow'];
-  sections: string[] = ['shapes', 'translations'];
 }
