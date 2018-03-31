@@ -1,57 +1,10 @@
-<section title="shapes">
-    <h2>Shapes</h2>
+<section *ngFor="let section of sections" title={{section}}>
+    <h2 class="pascalCase">{{section}}</h2>
     <ul>
-        <li class="container">
+        <li *ngFor="let shape of shapes" class="container">
             <div class="content">
-                <h3>Here is a box</h3>
-                <div class="box"></div>
-            </div>
-        </li>
-        <li class="container">
-            <div class="content">
-                <h3>Here is a triangle</h3>
-                <div class="triangle"></div>
-            </div>
-        </li>
-        <li class="container">
-            <div class="content">
-                <h3>Here is an arrow</h3>
-                <div class="arrow"></div>
-            </div>
-        </li>
-        <li class="container">
-            <div class="content">
-                <h3>Here is a circle</h3>
-                <div class="circle"></div>
-            </div>
-        </li>
-    </ul>
-</section>
-<section title="translations">
-    <h2>Translations</h2>
-    <ul>
-        <li class="container">
-            <div class="content">
-                <h3>Here is a box</h3>
-                <div class="box"></div>
-            </div>
-        </li>
-        <li class="container">
-            <div class="content">
-                <h3>Here is a triangle</h3>
-                <div class="triangle"></div>
-            </div>
-        </li>
-        <li class="container">
-            <div class="content">
-                <h3>Here is an arrow</h3>
-                <div class="arrow"></div>
-            </div>
-        </li>
-        <li class="container">
-            <div class="content">
-                <h3>Here is a circle</h3>
-                <div class="circle"></div>
+                <h3>Here is {{shape == 'arrow' ? 'an' : 'a'}} {{shape}}</h3>
+                <div class={{shape}}></div>
             </div>
         </li>
     </ul>

@@ -61,19 +61,22 @@ h3 {
     background-color: lightblue;
 }
 
-section[title="translations"] .box:hover{
+section[title="translations"]:hover .box {
     transform: translate(20px, 20px);
 }
 
-section[title="translations"] .triangle:hover{
+section[title="translations"]:hover .triangle {
     transform: skewY(20deg);
 }
 
-section[title="translations"] .arrow:hover{
+section[title="translations"]:hover .arrow {
     transform: rotate(180deg);
 }
 
-section[title="translations"] .circle:hover{
+section[title="translations"]:hover .circle {
     transform: scale(.5);
 }
 
+h2 {
+    text-transform: capitalize;
+}
