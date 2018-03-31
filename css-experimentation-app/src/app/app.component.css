@@ -80,3 +80,7 @@ section[title="translations"]:hover .circle {
 h2 {
     text-transform: capitalize;
 }
+
+.small-text {
+    font-size: 70%;
+}
