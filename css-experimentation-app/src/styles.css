@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    display: inline-block;
+}
+
+.container {
+    width: 200px;
+    min-height: 150px;
+    position: relative;
+    border: 1px solid lightgray;
+}
+
+.content {
+    border: 1px lightblue;
+}
+
+h3 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.pascal-case {
+    text-transform: capitalize;
+}
+
+.small-text {
+    font-size: 70%;
+}
