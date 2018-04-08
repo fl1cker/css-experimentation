@@ -8,6 +8,6 @@ import { FormGroup, FormControl } from '@angular/forms'
 })
 export class DashboardComponent {
     form = new FormGroup({
-        selectedPage: new FormControl('simple-css')
+        selectedPage: new FormControl('advanced-css')
     })
 }

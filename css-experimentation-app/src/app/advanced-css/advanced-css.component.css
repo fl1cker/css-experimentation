@@ -56,3 +56,19 @@
     background-color: white;
 }
 
+.lgbt-flag {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(
+        to bottom, 
+        red 16%, 
+        orange 16%, 
+        orange 32%, 
+        yellow 32%,
+        yellow 48%,
+        blue 48%, 
+        blue 64%,
+        green 64%, 
+        green 80%, 
+        purple 80%); /* violet comes out too much like pink */
+}

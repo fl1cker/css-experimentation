@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { SimpleCssComponent } from './simple-css/simple-css.component';
 import { AdvancedCssComponent } from './advanced-css/advanced-css.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { RadialGradientsComponent } from './radial-gradients/radial-gradients.component';
+import { PuppyFinderComponent } from './mock-websites/puppy-finder/puppy-finder.component';
 
 
 @NgModule({
@@ -14,7 +16,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     AppComponent,
     SimpleCssComponent,
     AdvancedCssComponent,
-    DashboardComponent
+    DashboardComponent,
+    RadialGradientsComponent,
+    PuppyFinderComponent
   ],
   imports: [
     BrowserModule,

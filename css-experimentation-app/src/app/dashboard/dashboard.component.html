@@ -1,8 +1,10 @@
 <form [formGroup]="form">
     <input type="radio" formControlName="selectedPage" value="simple-css"> Simple CSS
     <input type="radio" formControlName="selectedPage" value="advanced-css"> Advanced CSS
+    <input type="radio" formControlName="selectedPage" value="puppy-finder"> Mock Websites
 </form>
 <div [ngSwitch]="form.value.selectedPage">
     <simple-css *ngSwitchCase="'simple-css'"></simple-css>
     <advanced-css *ngSwitchCase="'advanced-css'"></advanced-css>
+    <puppy-finder *ngSwitchCase="'puppy-finder'"></puppy-finder>
 </div>
