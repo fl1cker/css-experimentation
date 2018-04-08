@@ -1,6 +1,7 @@
 <section *ngFor="let section of sections" title={{section}}>
     <h2 class="pascal-case">{{section}}
         <span *ngIf="section === 'translations'" class="small-text">(Hover Here)</span>
+        <span *ngIf="section === 'animations'" class="small-text">(To Do)</span>
     </h2>
     <ul>
         <li *ngFor="let shape of shapes" class="container">
