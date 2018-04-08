@@ -1,0 +1,8 @@
+<form [formGroup]="form">
+    <input type="radio" formControlName="selectedPage" value="simple-css"> Simple CSS
+    <input type="radio" formControlName="selectedPage" value="advanced-css"> Advanced CSS
+</form>
+<div [ngSwitch]="form.value.selectedPage">
+    <simple-css *ngSwitchCase="'simple-css'"></simple-css>
+    <advanced-css *ngSwitchCase="'advanced-css'"></advanced-css>
+</div>
